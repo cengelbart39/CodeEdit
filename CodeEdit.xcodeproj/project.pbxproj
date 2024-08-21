@@ -444,7 +444,6 @@
 		6CC17B4F2C432AE000834E2C /* CodeEditSourceEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 6CC17B4E2C432AE000834E2C /* CodeEditSourceEditor */; };
 		6CC17B512C43311900834E2C /* ProjectNavigatorViewController+NSOutlineViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC17B502C43311900834E2C /* ProjectNavigatorViewController+NSOutlineViewDataSource.swift */; };
 		6CC17B532C43314000834E2C /* ProjectNavigatorViewController+NSOutlineViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC17B522C43314000834E2C /* ProjectNavigatorViewController+NSOutlineViewDelegate.swift */; };
-		6CC17B592C43F53700834E2C /* CodeEditSourceEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 6CC17B582C43F53700834E2C /* CodeEditSourceEditor */; };
 		6CC17B5B2C44258700834E2C /* WindowControllerPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC17B5A2C44258700834E2C /* WindowControllerPropertyWrapper.swift */; };
 		6CC9E4B229B5669900C97388 /* Environment+ActiveEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC9E4B129B5669900C97388 /* Environment+ActiveEditor.swift */; };
 		6CD0358A2C3461160091E1F4 /* KeyWindowControllerObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD035892C3461160091E1F4 /* KeyWindowControllerObserver.swift */; };
@@ -474,6 +473,7 @@
 		85773E1E2A3E0A1F00C5D926 /* SettingsSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773E1D2A3E0A1F00C5D926 /* SettingsSearchResult.swift */; };
 		85E4122A2A46C8CA00183F2B /* LocationsSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E412292A46C8CA00183F2B /* LocationsSettings.swift */; };
 		9D36E1BF2B5E7D7500443C41 /* GitBranchesGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36E1BE2B5E7D7500443C41 /* GitBranchesGroup.swift */; };
+		9D51F1462C76342300DEB6E2 /* CodeEditSourceEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 9D51F1452C76342300DEB6E2 /* CodeEditSourceEditor */; };
 		B6041F4D29D7A4E9000F3454 /* SettingsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6041F4C29D7A4E9000F3454 /* SettingsPageView.swift */; };
 		B6041F5229D7D6D6000F3454 /* SettingsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6041F5129D7D6D6000F3454 /* SettingsWindow.swift */; };
 		B607181D2B0C5BE3009CDAB4 /* GitClient+Stash.swift in Sources */ = {isa = PBXBuildFile; fileRef = B607181C2B0C5BE3009CDAB4 /* GitClient+Stash.swift */; };
@@ -1269,7 +1269,7 @@
 				5879828A292ED15F0085B254 /* SwiftTerm in Frameworks */,
 				2816F594280CF50500DD548B /* CodeEditSymbols in Frameworks */,
 				30CB64942C16CA9100CC8A9E /* LanguageClient in Frameworks */,
-				6CC17B592C43F53700834E2C /* CodeEditSourceEditor in Frameworks */,
+				9D51F1462C76342300DEB6E2 /* CodeEditSourceEditor in Frameworks */,
 				6C6BD6F829CD14D100235D17 /* CodeEditKit in Frameworks */,
 				6C81916B29B41DD300B75C92 /* DequeModule in Frameworks */,
 			);
@@ -3302,6 +3302,22 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		B6966A262C2F673A00259C2D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6BF41412C2C672A003AB4B3 /* SourceControlPushView.swift */,
+				B6966A272C2F683300259C2D /* SourceControlPullView.swift */,
+				B607184B2B17E037009CDAB4 /* SourceControlStashView.swift */,
+				B6966A292C2F687A00259C2D /* SourceControlFetchView.swift */,
+				B67431CB2C3E45F30047FCA6 /* SourceControlSwitchView.swift */,
+				B65B10F42B081A0C002852CF /* SourceControlAddExistingRemoteView.swift */,
+				041FC6AC2AE437CE00C1F65A /* SourceControlNewBranchView.swift */,
+				B60718362B170638009CDAB4 /* SourceControlRenameBranchView.swift */,
+				B6966A2F2C33282200259C2D /* RemoteBranchPicker.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B69D3EDC2C5E856F005CF43A /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -3318,22 +3334,6 @@
 				61D435D12C2969D800D032B8 /* CETaskStatus.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		B6966A262C2F673A00259C2D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				B6BF41412C2C672A003AB4B3 /* SourceControlPushView.swift */,
-				B6966A272C2F683300259C2D /* SourceControlPullView.swift */,
-				B607184B2B17E037009CDAB4 /* SourceControlStashView.swift */,
-				B6966A292C2F687A00259C2D /* SourceControlFetchView.swift */,
-				B67431CB2C3E45F30047FCA6 /* SourceControlSwitchView.swift */,
-				B65B10F42B081A0C002852CF /* SourceControlAddExistingRemoteView.swift */,
-				041FC6AC2AE437CE00C1F65A /* SourceControlNewBranchView.swift */,
-				B60718362B170638009CDAB4 /* SourceControlRenameBranchView.swift */,
-				B6966A2F2C33282200259C2D /* RemoteBranchPicker.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		B6AB09AB2AAACBF70003A3A6 /* Tabs */ = {
@@ -3572,7 +3572,7 @@
 				6C85BB3F2C2105ED00EB5DEF /* CodeEditKit */,
 				6C85BB432C210EFD00EB5DEF /* SwiftUIIntrospect */,
 				6CC17B4E2C432AE000834E2C /* CodeEditSourceEditor */,
-				6CC17B582C43F53700834E2C /* CodeEditSourceEditor */,
+				9D51F1452C76342300DEB6E2 /* CodeEditSourceEditor */,
 			);
 			productName = CodeEdit;
 			productReference = B658FB2C27DA9E0F00EA4DBD /* CodeEdit.app */;
@@ -3669,7 +3669,7 @@
 				6C85BB422C210EFD00EB5DEF /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 				303E88452C276FD100EEA8D9 /* XCRemoteSwiftPackageReference "LanguageClient" */,
 				303E88462C276FD600EEA8D9 /* XCRemoteSwiftPackageReference "LanguageServerProtocol" */,
-				6CC17B572C43F53700834E2C /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */,
+				9D51F1442C76342300DEB6E2 /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */,
 			);
 			productRefGroup = B658FB2D27DA9E0F00EA4DBD /* Products */;
 			projectDirPath = "";
@@ -5538,12 +5538,12 @@
 				minimumVersion = 1.2.0;
 			};
 		};
-		6CC17B572C43F53700834E2C /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */ = {
+		9D51F1442C76342300DEB6E2 /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/CodeEditApp/CodeEditSourceEditor";
+			repositoryURL = "https://github.com/cengelbart39/CodeEditSourceEditor.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.7.4;
+				branch = "feat/erb-ejs";
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -5631,9 +5631,9 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = CodeEditSourceEditor;
 		};
-		6CC17B582C43F53700834E2C /* CodeEditSourceEditor */ = {
+		9D51F1452C76342300DEB6E2 /* CodeEditSourceEditor */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6CC17B572C43F53700834E2C /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */;
+			package = 9D51F1442C76342300DEB6E2 /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */;
 			productName = CodeEditSourceEditor;
 		};
 /* End XCSwiftPackageProductDependency section */

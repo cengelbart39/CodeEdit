@@ -1,5 +1,5 @@
 {
-  "originHash" : "a33fcca819dee4c816b1474e19017510b1d62b170c921187042e0675d3f4b0b3",
+  "originHash" : "93c0dd0d8566fd46265c01ee1b68816e853139be3dfaa541e8486789e506ce1f",
   "pins" : [
     {
       "identity" : "anycodable",
@@ -22,19 +22,19 @@
     {
       "identity" : "codeeditlanguages",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/CodeEditApp/CodeEditLanguages.git",
+      "location" : "https://github.com/cengelbart39/CodeEditLanguages.git",
       "state" : {
-        "revision" : "5b27f139269e1ea49ceae5e56dca44a3ccad50a1",
-        "version" : "0.1.19"
+        "branch" : "feat/erb-ejs",
+        "revision" : "03a5c4dcddec3d124facf89339a3c6c74431e505"
       }
     },
     {
       "identity" : "codeeditsourceeditor",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/CodeEditApp/CodeEditSourceEditor",
+      "location" : "https://github.com/cengelbart39/CodeEditSourceEditor.git",
       "state" : {
-        "revision" : "4e014f71d7be053ea8d05f6c0e45be268f9a0d64",
-        "version" : "0.7.4"
+        "branch" : "feat/erb-ejs",
+        "revision" : "b07db000dd69fc6181293307487b7f3ec1cbfd5e"
       }
     },
     {
